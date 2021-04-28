@@ -1,0 +1,12 @@
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+{% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'home/css/stylePhp.css' %}" />
+
+{% if info_php_list %}
+    <ul>
+        {% for line in info_php_list %}
+         <li><a>{{ line }} </a></li>
+        {% endfor %}
+    </ul>
+{% endif %}

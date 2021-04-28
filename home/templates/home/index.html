@@ -1,0 +1,66 @@
+{% extends "home/baseIndex.html" %}
+
+{% block page_title %}
+    FreeTime Software logued as {{username}}
+{% endblock %}
+
+{% block content %}
+    <div class="header"> {% load static %}
+        <h1>FreeTime Software - Hola {{username}}!
+            <img src="{% static 'home/images/FreeTimeSoftware.png' %}"
+                 width="55"
+                 height="55"
+                 style="margin: 0 10px 10px 0;float:right;" /></h1>
+        <h2 style="font-size: 14px">Mecanet - Market Cental</h2>
+    </div>
+    <ul>
+        <li><a class="active" href="{% url 'home:about_fts' %}" target="iframe_a">Home</a></li>
+        <li><a href="http://localhost/info.php" target="iframe_a">Noticias</a></li>
+        <li><a href="{% url 'talleres:talleres_view' %}" target="iframe_a" >Talleres</a> </li>
+        <li class="dropdown" >
+            <a class="dropbtn" href="{% url 'mecanicos:index' %}" target="iframe_a">Servicios</a>
+            <div class="dropdown-content">
+                <a href="http://httpd.apache.org/docs/2.0/misc/tutorials.html"
+                   target="iframe_a">Tutorial</a>
+                <a href="http://httpd.apache.org/docs/current/mod/mod_unique_id.html"
+                   target="iframe_a">Apache mod</a>
+                <a href="http://httpd.apache.org/docs/2.4/mod/core.html#serversignature"
+                   target="iframe_a">Server Signature</a>
+            </div>
+        </li>
+        <li><a href="{% url 'home:php_view' %}"
+               target="iframe_a" >Perfil</a> </li>
+        <li><a href="http://php.net/manual/es/tutorial.firstpage.php"
+               target="iframe_a">Contacto</a></li>
+        <li><a href="https://dashfdj.wordpress.com/"
+               target="iframe_a">Blog</a></li>
+        <li><a href="{% url 'home:about_fts' %}" target="iframe_a">About</a></li>
+        <li><a href="{% url 'polls:index' %}"
+               target="iframe_a" >Encuestas</a></li>
+        <li><a href="{% url 'home:log_out' %}" >Log out</a></li>
+        <li class="dropdown" style="float:right;">
+            <a class="dropbtn" href="#language">Language</a>
+            <div class="dropdown-content">
+                <a href="#">Espa&ntilde;ol</a>
+                <a href="#">English</a>
+            </div>
+        </li>
+    </ul>
+    <iframe width="100%" height=700px src="{% url 'home:about_fts' %}" name="iframe_a"></iframe>
+    <div class="box">
+        <ul>
+            <li><em class="find-us">Encontranos en:</em><a href="http://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="http://twitter.com" target="_blank">Twitter </a></li>
+            <li><a href="http://tumblr.com" target="_blank">Tumblr</a></li>
+            <li><a href="http://pinterest.com" target="_blank">Pinterest</a></li>
+        </ul>
+        <div id="footer">
+            <center>
+                Copyright &copy; 2017 FreeTime Software. All rights reserved.<br/>
+                Powered by Django, Python, MySQL, Apache, Nginx, GitHub,
+                Amazon Web Services, Oracle VM VirtualBox and Docker
+            </center>
+        </div>
+    </div>
+{% endblock %}
+

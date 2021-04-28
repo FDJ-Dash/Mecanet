@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Talleres</title>
+        {% load comentarios_tags %}
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'talleres/css/normalize.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'talleres/css/taller.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'comentarios/css/comentarios.css' %}" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="/static/talleres/js/prefixfree.min.js"></script>
+        <script src="/static/talleres/js/main.js"></script>
+        <script src="/static/comentarios/js/comentarios.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Talleres</h1>
+        </header>
+        <section id="wrapper">
+            <section id="sec-talleres">
+                <article id="talleres">
+                    <ul>
+                        {% for taller in talleres %}
+                            <li>
+                                <a data-id="{{ taller.id }}">
+                                    <figure>
+                                        <img src="/static/talleres/img/{{ taller.thumb }}">
+                                        <figcaption>{{ taller.descripcion }}</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </article>
+                <article id="contenido-taller"></article>
+            </section>
+            <section id="side">
+                <!-- incluir el modulo comentarios-->
+                {% show_comentarios %}
+            </section>
+        </section>
+    </body>
+</html>

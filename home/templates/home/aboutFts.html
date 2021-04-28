@@ -1,0 +1,41 @@
+{% extends "home/baseAboutFts.html" %}
+
+{% block page_title %}
+    About Free Time Software
+{% endblock %}
+
+{% block content %}
+    <div id="wrapper">
+        <div id="header"></div>
+        <div id="bg"></div>
+    </div>
+
+    <div id="main-content">
+        <div id="left-column">
+            <div id="logo">
+                Freetime Softwate Home Page
+                <h2>Que decir que decir que decir</h2>
+                <p> {% load static %}
+                    <img src="{% static 'home/images/FreeTimeSoftware.png' %}"
+                         width="139"
+                         height="150"
+                         style="margin: 0 10px 10px 0;float:left;" />
+                    <em>Que decir que decir que decir Que decir que decir que decir</em><br/>
+                    <em>Que decir que decir que decir Que decir que decir que decir
+                        Que decir que decir que decir</em> <br/>
+                    <em>Que decir que decir que decir Que decir que decir que decir
+                        Que decir que decir que decir</em> <br/>
+                    <em>Que decir que decir que decir</em><br/>
+                </p>
+            </div>
+            <div class="sidebar">
+                <h3>Ejemplo loco</h3>
+                <p>Ahhhhhhhhhhhhhhhhh</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Layout adapted from <a href="http://www.web-designers-directory.org/"
+                               target="_blank">Web Designers' Directory</a>.
+    </div>
+{% endblock %}
