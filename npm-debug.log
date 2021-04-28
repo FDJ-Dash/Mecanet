@@ -1,0 +1,60 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly loadAllDepsIntoIdealTree Finishing
+20 silly idealTree:prePrune fts
+20 silly idealTree:prePrune └── casperjs@1.1.4
+21 silly loadIdealTree Finishing
+22 silly currentTree fts
+22 silly currentTree └── casperjs@1.1.4
+23 silly idealTree fts
+23 silly idealTree └── casperjs@1.1.4
+24 silly generateActionsToTake Starting
+25 silly install generateActionsToTake
+26 warn checkPermissions Missing write access to /home/dash/PycharmProjects/FTS/django-fts/fts/node_modules
+27 silly rollbackFailedOptional Starting
+28 silly rollbackFailedOptional Finishing
+29 silly runTopLevelLifecycles Starting
+30 silly runTopLevelLifecycles Finishing
+31 silly install printInstalled
+32 warn enoent ENOENT: no such file or directory, open '/home/dash/PycharmProjects/FTS/django-fts/fts/package.json'
+33 warn fts No description
+34 warn fts No repository field.
+35 warn fts No README data
+36 warn fts No license field.
+37 verbose stack Error: EACCES: permission denied, access '/home/dash/PycharmProjects/FTS/django-fts/fts/node_modules'
+37 verbose stack     at Error (native)
+38 verbose cwd /home/dash/PycharmProjects/FTS/django-fts/fts
+39 error Linux 4.4.0-75-generic
+40 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install"
+41 error node v4.2.6
+42 error npm  v3.5.2
+43 error path /home/dash/PycharmProjects/FTS/django-fts/fts/node_modules
+44 error code EACCES
+45 error errno -13
+46 error syscall access
+47 error Error: EACCES: permission denied, access '/home/dash/PycharmProjects/FTS/django-fts/fts/node_modules'
+47 error     at Error (native)
+47 error  { [Error: EACCES: permission denied, access '/home/dash/PycharmProjects/FTS/django-fts/fts/node_modules']
+47 error   errno: -13,
+47 error   code: 'EACCES',
+47 error   syscall: 'access',
+47 error   path: '/home/dash/PycharmProjects/FTS/django-fts/fts/node_modules' }
+48 error Please try running this command again as root/Administrator.
+49 verbose exit [ -13, true ]

@@ -1,0 +1,33 @@
+<style>
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: #cccc00;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px #FFFFFF
+}
+
+li a:hover {
+    background-color: #999900;
+    color: black;
+    text-shadow: 2px 2px 5px #444444
+}
+
+body {
+    background-image: url("../images/background.gif");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 1400px 700px;
+    background-attachment: fixed;
+}
+
+.signout {
+    color: lightgreen;
+    padding: 15px;
+}
+</style>
